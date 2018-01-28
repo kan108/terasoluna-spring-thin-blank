@@ -17,18 +17,18 @@
    - url=jdbc:oracle:thin:@[データベースサーバIPアドレス]:[ポート番号]:[インスタンス名]
    - 【設定例】
 -->
-<Context>
-  <Resource
-     name="jdbc/TerasolunaSampleDataSource"
-     type="javax.sql.DataSource"
-     driverClassName="oracle.jdbc.OracleDriver"
-     username="xxxxx"
-     password="xxxxx"
-     url="jdbc:oracle:thin:@xxx.xxx.xxx.xxx:1521:sampledb"
-     maxIdle="2"
-     maxWait="5000"
-     maxActive="4"/>
-</Context>
+<!-- <Context> -->
+<!--   <Resource -->
+<!--      name="jdbc/TerasolunaSampleDataSource" -->
+<!--      type="javax.sql.DataSource" -->
+<!--      driverClassName="oracle.jdbc.OracleDriver" -->
+<!--      username="xxxxx" -->
+<!--      password="xxxxx" -->
+<!--      url="jdbc:oracle:thin:@xxx.xxx.xxx.xxx:1521:sampledb" -->
+<!--      maxIdle="2" -->
+<!--      maxWait="5000" -->
+<!--      maxActive="4"/> -->
+<!-- </Context> -->
 
 <!-- 
    - 「データベースがPostgreSQLの場合の設定」
@@ -39,20 +39,20 @@
    - url=jdbc:postgresql://[データベースサーバIPアドレス]:[ポート番号]/[データベース名称]
    - 【設定例】
 -->
-<!-- 
+
 <Context>
   <Resource
      name="jdbc/TerasolunaSampleDataSource"
      type="javax.sql.DataSource"
      driverClassName="org.postgresql.Driver"
      username="postgres"
-     password=""
+     password="password"
      url="jdbc:postgresql://127.0.0.1:5432/sampledb"
      maxIdle="2"
      maxWait="5000"
      maxActive="4"/>
 </Context>
--->
+
 
 <!-- 
    - 「データベースがhsqldbの場合の設定」

@@ -10,14 +10,23 @@
 <html:html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
-<title>初期画面</title>
+<title>ログオン画面</title>
 </head>
+
 <body>
-<div style="text-align:center">
-
--- ようこそTERASOLUNAへ --
-
-</div>
-<ts:link action="/logon/logonSCR">ログオン画面へ</ts:link>
+<table border="0" style="width:100%;">
+    <tr>
+        <td align="center">
+            <html:img module="/" page="/image/terasoluna_logo.gif" />
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <h2>
+                ログオン画面
+            </h2>
+        </td>
+    </tr>
+</table>
 </body>
 </html:html>
